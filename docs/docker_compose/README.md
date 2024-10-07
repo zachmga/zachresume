@@ -2,15 +2,15 @@
 
 We’ll use Docker Compose in more depth in coming assignments. Using Docker Compose in this assignment is designed to give you a very high-level introduction.
 
-### What is Docker Compose?
+### What is Docker Compose
 
-Docker Compose is a tool for defining and running multi-container applications. It helps us streamline our development and deployment experience. 
+Docker Compose is a powerful tool that simplifies the process of managing multi-container Docker applications. While Docker itself handles individual containers, Docker Compose allows developers to define and orchestrate multiple containers as a single application using a YAML configuration file. This file describes all the services, networks, and volumes required for your application, making it easy to reproduce the entire environment consistently across different systems.
 
-Docker Compose functionality is handled by writing a YAML-based configuration file. Then, with a single command, you create and start all the services from your configuration file. 
+With Docker Compose, developers can specify their application infrastructure requirements, including container images, environment variables, port mappings, volume mounts, and dependencies between services. For example, a typical web application might include containers for the web server, database, cache, and message queue. Instead of managing each container separately with complex Docker commands, developers can define all these components in the Compose file and launch the entire stack with a single command: `docker compose up`.
 
-Compose works in production, staging, development, testing, as well as with CI workflows. 
+One of the key advantages of Docker Compose is its ability to create isolated environments for development, testing, and staging. When you run a Compose file, it automatically creates a dedicated network for your application's containers, allowing them to communicate with each other while remaining isolated from other applications on the host system. This isolation, combined with the ability to share Compose files among team members, ensures consistency across different development environments and eliminates the "it works on my machine" problem.
 
-It also has commands for managing the whole lifecycle of your application. 
+Beyond basic container orchestration, Docker Compose supports advanced features such as scaling services, managing container lifecycles, and handling service dependencies. It can automatically restart failed containers, wait for dependent services to be ready before starting a container, and even scale specific services to multiple instances. This makes Docker Compose an invaluable tool for both development workflows and simple production deployments, though for more complex production environments, container orchestration platforms like Kubernetes are often preferred.
 
 ### What Can We Do with Docker Compose?
 

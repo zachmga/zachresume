@@ -28,10 +28,14 @@ The *public/output directory* should be /src/public by default- this is used in 
 
 Now, let’s create a `.gitignore` file in the root of the directory. Add the following to your `.gitignore` :
 
+**UPDATED:**
+
 ```
-public
-docs
-img
+<myresume>/public/
+docs/
+img/
+part1/
+part2/
 README.md
 ```
 
@@ -39,9 +43,48 @@ Whenever your site is generated, it creates all of its files in the `/public` di
 
 We’ll remove `docs`, `img`, and [`README.md`](http://README.md) as those aren’t needed to run your site, they’re just for assignment instructions.
 
-Run `git status` to see all of the files that will be committed to your repository. 
+### Updated: Commit code to your personal GitHub Profile:
 
-Then run `git add .`  and `git commit -m "Your commit message here"` . Then push your changes to your repository. 
+1. Log into GitHub. In the top right corner, click on the circle that shows your profile picture. In the dropdown, select “Your repositories”: 
+    
+    ![Your repositories](../img/your_repositories.png)
+    
+2. In the repository view, select the green “New” button to create a new repository in your personal GitHub profile. You can call it whatever you like, but something along the lines of <firstname_lastname_resume> will help you identify the repository in the future. 
+3. You can make it public or private, it’s up to you. I recommend making it public so that employers can see a history of committed code in the repo. You don’t need to initialize it with a `README` or with a `.gitignore` file. 
+4. Depending on how you started the assignment, follow these instructions: 
+    
+    **If did not clone the Assignment 6 Repository before proceeding with the assignment:** 
+    
+    On the next screen there are instructions to “…push an existing repository from the command line” You’ll want to use these instructions if you didn’t clone the assignment 6 repository. 
+    
+    From the root of your project directory (where you added your `.gitignore` file), run the commands listed on GitHub. They’ll look something like this:
+    
+    ```bash
+    git remote add origin https://github.com/<userprofilename>/<remote_repository_name>.git
+    git branch -M main
+    git push -u origin main
+    ```
+    
+    **If you already cloned the Assignment 6 Repository before proceeding with the assignment:** 
+    
+    You’ll need to update the remote url of your project. From the root of your project directory (where you added your `.gitignore` file) run the commands below to update the URL of your remote: 
+    
+    ```bash
+    git remote set-url origin https://github.com/<userprofilename>/<remote_repository_name>.git
+    ```
+    
+5. Run `git status` to see all of the files that will be committed to your repository. 
+6. Then run `git add .`  and `git commit -m "Your commit message here"` . Then `git push` your changes to your repository. 
+
+<aside>
+
+If after you commit your code to your profile’s repository, you still see some assignment directories, you can remove them by running `git rm -r --cached` followed by a list of directories that you want to remove from the repo. For example:
+
+```bash
+git rm -r --cached part1 part2 docs img
+```
+
+</aside>
 
 ## **Step 2: Create a new App**
 
@@ -63,32 +106,56 @@ First, we need to create an app in App Platform:
 
 ![Create Resource from Source Code](../img/app_platform_create_resource_from_source_code.png)
 
-1. Next, we’ll give DigitalOcean App Platform access to our repository that contains our static site. 
+5. Next, we’ll give DigitalOcean App Platform access to our repository that contains our static site. 
     
     ![Select Repository](../img/app_platform_select_repository.png)
     
-    I have already allowed DigitalOcean App Platform to have access to any repository created in the `MIS547-Fall24` GitHub organization. A new repository is created in MIS547 org every time a student accepts an assignment. Scroll down to the repositories that start with “Assignment-6” and then find yours, and select it. 
+    <aside>
+    
+    **OLD INSTRUCTIONS:** 
+    
+    I have already allowed DigitalOcean App Platform to have access to any repository created in the `MIS547-Fall24` GitHub organization. There are a *lot* of them. A new repository is created in MIS547 org every time a student accepts an assignment. Scroll down to the repositories that start with “Assignment-6” and then find yours, and select it. 
+    
+    </aside>
+    
+    <aside>
+    
+    **NEW INSTRUCTIONS:**
+    
+    You need to grant App Platform access to the repository that hosts your code. Click on Manage Access and then choose your own profile. 
+    
+    ![Manage_Access](../img/Where_to_install_DO.png)
+    
+    You have the option to select all repositories or only the one that contains the code for your resume. 
+    
+    ![All or specific repos](../img/all_repos_or_only_select_repos.png)
+    
+    If you don’t see your repository in the drop down, you can search for it in the search box. 
+    
+    When you’re done, select “Install and Authorize”. You should now be able to see the repository back in App Platform! 
+    
+    </aside>
     
 
-1. Then ensure that **Autodeploy code changes** is checked, and press **next** to continue. 
+6. Then ensure that **Autodeploy code changes** is checked, and press **next** to continue. 
 
-1. You’ll be taken to a page where App Platform has detected your app’s configuration. You’ll see the resources detected from the configuration for your app.
+7. You’ll be taken to a page where App Platform has detected your app’s configuration. You’ll see the resources detected from the configuration for your app.
 
 ![Auto Detect Configuration](../img/app_platform_autodetect_config.png)
 
-1. Click on “Edit” and then scroll down to see the Build Phase information. Under the “Build Command”, in the box, update the command as seen below. Click Save.
+8. Click on “Edit” and then scroll down to see the Build Phase information. Under the “Build Command”, in the box, update the command as seen below. Click Save.
 
 ![Edit build command](../img/app_platform_build_command.png)
 
-1. In the App Info section, next to the name of your app, select ‘Edit’. 
+9. In the App Info section, next to the name of your app, select ‘Edit’. 
 
 ![Edit App Info](../img/app_platform_edit_app_info.png)
 
-1. Change the project to Assignment 6 and click ‘Save’. 
+10. Change the project to Assignment 6 and click ‘Save’. 
 
 ![Change Project](../img/app_platform_assingment_6.png)
 
-1. Under the ‘Review’ tab, review the configuration, then click Launch App. When your app is being deployed, you’ll have the opportunity to view the build logs by clicking on ‘Go to Build Logs’.
+11. Under the ‘Review’ tab, review the configuration, then click Launch App. When your app is being deployed, you’ll have the opportunity to view the build logs by clicking on ‘Go to Build Logs’.
 
 ![Go to Build Logs](../img/app_platform_build_logs.png)
 

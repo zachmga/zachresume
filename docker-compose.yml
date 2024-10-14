@@ -1,0 +1,11 @@
+name: my-site
+
+services:
+  server:
+    image: hugomods/hugo:exts
+    command: hugo server --bind 0.0.0.0
+    volumes:
+      - .:/src
+      - C:/Users/zachg/hugo_cache:/tmp/hugo_cache
+    ports:
+      - 1313:1313

@@ -1,0 +1,45 @@
+about:
+  name: Zachary Garcia 
+  tagline: Research Assistant | Cybersecurity Enthusiast
+  phone: "520*******"
+  email: zachg0705@arizona.edu
+  links:
+    - title: /in/zachmga
+      url: https://www.linkedin.com/in/zachgarciaua/
+      icon: fab fa-linkedin
+    - title: zachmga
+      url: https://github.com/zachmga
+      icon: fab fa-github
+  details: |
+    Current MIS Graduate Student in the SFI Research Fellow at the University of Arizona with an interest 
+    in furthering cybersecurity to protect the nation and its assets. Dedicated to learning and researching 
+    the bleeding edge of new technologies. Recent focus has been on Universal Adversarial Malware Generation 
+    for Commercial Malware Detectors utilizing Large Language Models. Excited to make a difference in the 
+    cyberspace of tomorrow.
+
+
+skills:
+  - groupName: AI & Machine Learning
+    list:
+      - Python - PyTorch - TensorFlow
+      - Scikit-learn - Keras - OpenCV
+
+  - groupName: Malware Creation & Analysis
+    list:
+      - IDA Pro - Ghidra - Radare2
+      - Yara - Cuckoo Sandbox - PEiD
+
+  - groupName: Programming & Systems
+    list:
+      - Git - Docker - NGINX
+      - Linux
+
+interests:
+  - Large Language Models
+  - AI Applications
+  - Malware Analysis
+
+languages:
+  - name: English
+    level: Native
+

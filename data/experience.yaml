@@ -1,0 +1,37 @@
+- company: Hunter Strategy
+  roles:
+    - role: Offensive System Operations Intern 
+      tools: Burpsuite, Rustscan, Hydra, Hashcat, Bloodhound
+      details: |
+        -	Operated as a Red team operator to test and enumerate through client assets using SOTA (state of the art) tools, eg., Burpsuite, Rustscan, Hydra, Hashcat, Bloodhound, etc.
+        -	Participated in extensive Pentest Report writing, internal and external assessments, executive reports.
+      date: 05.2024 -  09.2024
+
+- company: University of Arizona 
+  page: 1
+  roles: 
+    - role: Graduate Research Assistant 
+      tools: Python, Pytorch, LLMs, Deep-Learning 
+      details: |
+        - Utilized Large Language Models to generate evasive byte sequences, appending them to malware samples to evade detection by AVs.
+        - Worked on creating a dataset of malware samples and their corresponding evasive byte sequences.
+        - Conducted research on the effectiveness of evasive byte sequences on AV detection rates.
+      date: 09.2023 - Present
+    
+    - role: Teaching Assistant
+      tools: SQL, Databases
+      date: 09.2023 - Present
+      details: |
+        -	Aided in necessary functions of the course, including grading, office hours, and teaching.
+        -	Answered student questions related to databases and SQL code.
+
+
+- company: Onora Systems
+  page: 2
+  roles:
+    - role: Junior Technician
+      details: |
+        -	Handled Cable Runs and Termination (Cat5+ and Fiber), and installation of a Cisco 9400R Series Switch.
+        -	Installed and Managed systems of Commercial and Residential applications (Access Control, Surveillance Systems, Automation, Burglar Alarms, and Fire Systems).
+        -	Assisted setup of other brand name switches, routers, and access points (Netgear, D-Link, Ubiquiti).
+      date: 2021-2023

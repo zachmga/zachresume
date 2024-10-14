@@ -1,0 +1,13 @@
+- name: Management Information Sytems Masters
+  university: University of Arizona
+  location: Tucson, AZ
+  date: 2023- 2025
+  gpa: 3.4 / 4.00
+  details: >
+    Gaining a Masters in Management Information Systems with a focus on Cybersecurity.  
+
+- name: Management Information Sytems Undergraduate
+  university: University of Arizona
+  location: Tucson, AZ
+  date: 2019 - 2023
+  gpa : 3.0 / 4.00
